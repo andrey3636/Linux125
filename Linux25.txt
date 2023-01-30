@@ -1,0 +1,13 @@
+crontab
+*/15 * * * * /opt/45_46_morning/Andrey3636/taskAndrey.sh
+
+
+SH
+
+#!/bin/bash
+date=$(date +%d%m%y)
+
+for ((i=1; i<=10; i++))
+do 
+touch /opt/45_46_morning/Andrey3636/test/$i$date
+done
